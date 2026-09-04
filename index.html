@@ -439,38 +439,69 @@
                         </div>
                     </div>
 
-                    <div class="bg-dark-900/80 p-4 rounded-2xl border border-white/5">
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="text-xs font-mono text-amberforge-400 font-bold uppercase tracking-wider">
-                                📷 Bukti Lapangan & Hasil Pemodelan Slide2 (PT Semen Padang)
+                    <!-- IDE 1: STRIP PERBANDINGAN BERNARASI (SLIDE2 TREND) -->
+                    <div class="bg-dark-900/90 p-5 rounded-2xl border border-white/10 space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-3">
+                            <div>
+                                <span class="text-[11px] font-mono font-bold text-amberforge-400 uppercase tracking-widest">📈 Infografik Tren Hidrogeologi Slope Stability (Rocscience Slide2)</span>
+                                <h4 class="text-sm font-bold text-white">Degradasi Faktor Keamanan (FoS) Akibat Kenaikan Muka Air Tanah</h4>
                             </div>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded bg-dark-850 border border-white/10 text-zinc-400">Metode Bishop Simplified</span>
                         </div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="work-img-1" src="img/1.jpeg" alt="Observasi Lapangan APD Quarry" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Survei Lapangan PT Semen Padang', 'LAPANGAN')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('work-img-1').src, 'Survei Lapangan PT Semen Padang', 'Observasi ketersediaan jenjang & struktur diskontinuitas lereng limestone Quarry PNPB 6 Selatan.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-11 gap-3 items-center">
+                            
+                            <!-- Step 1: Kering -->
+                            <div class="lg:col-span-3 group relative photo-contain-box rounded-xl overflow-hidden border border-emerald-500/40 bg-dark-950 p-2 text-center cursor-pointer" onclick="openLightbox(document.getElementById('slide-dry-img').src, 'Rocscience Slide2 FoS = 1.6 (Kondisi Kering)', 'Analisis batas kesetimbangan metode Bishop Simplified tanpa pengaruh muka air tanah.')">
+                                <div class="absolute top-3 left-3 z-10 px-2.5 py-0.5 bg-emerald-500 text-dark-950 font-mono font-extrabold text-[10px] rounded shadow">
+                                    FoS 1.6 • KERING
                                 </div>
-                            </div>
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="work-img-2" src="img/Hasil FK Kondisi Kering.png" alt="Slide2 FoS Kering 1.6" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Slide2 FoS Kering 1.6', 'GEOTEKNIK')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('work-img-2').src, 'Rocscience Slide2 FoS = 1.6 (Kondisi Kering)', 'Analisis batas kesetimbangan metode Bishop Simplified tanpa pengaruh muka air tanah.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+                                <div class="h-32 flex items-center justify-center overflow-hidden rounded-lg mt-5 mb-2">
+                                    <img id="slide-dry-img" src="img/Hasil FK Kondisi Kering.png" alt="FoS Kering 1.6" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Slide2 FoS Kering 1.6', 'GEOTEKNIK')">
                                 </div>
+                                <p class="text-[11px] text-zinc-300 font-mono px-1">Stabil & Aman (Ambang Kepmen ESDM)</p>
                             </div>
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="work-img-3" src="img/Hasil FK Kondisi Basah.png" alt="Slide2 FoS Basah 1.4" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Slide2 FoS Basah 1.4', 'GEOTEKNIK')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('work-img-3').src, 'Rocscience Slide2 FoS = 1.4 (Kondisi Basah)', 'Penurunan faktor keamanan akibat rembesan air hujan pada lereng limestone quarry.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+
+                            <!-- Panah Alur 1 -->
+                            <div class="lg:col-span-1 flex justify-center text-amberforge-400 py-1 lg:py-0">
+                                <span class="text-xl font-mono font-bold transform rotate-90 lg:rotate-0">➔</span>
+                            </div>
+
+                            <!-- Step 2: Basah -->
+                            <div class="lg:col-span-3 group relative photo-contain-box rounded-xl overflow-hidden border border-amber-500/40 bg-dark-950 p-2 text-center cursor-pointer" onclick="openLightbox(document.getElementById('slide-wet-img').src, 'Rocscience Slide2 FoS = 1.4 (Kondisi Basah)', 'Penurunan faktor keamanan akibat rembesan air hujan pada lereng limestone quarry.')">
+                                <div class="absolute top-3 left-3 z-10 px-2.5 py-0.5 bg-amber-500 text-dark-950 font-mono font-extrabold text-[10px] rounded shadow">
+                                    FoS 1.4 • BASAH
                                 </div>
-                            </div>
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="work-img-4" src="img/Hasil FK Kondisi Jenuh.png" alt="Slide2 FoS Jenuh 1.1" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Slide2 FoS Jenuh 1.1', 'GEOTEKNIK')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('work-img-4').src, 'Rocscience Slide2 FoS = 1.1 (Kondisi Jenuh)', 'Simulasi muka air jenuh penuh yang mendekati ambang batas kritis Kepmen ESDM 1827.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+                                <div class="h-32 flex items-center justify-center overflow-hidden rounded-lg mt-5 mb-2">
+                                    <img id="slide-wet-img" src="img/Hasil FK Kondisi Basah.png" alt="FoS Basah 1.4" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Slide2 FoS Basah 1.4', 'GEOTEKNIK')">
                                 </div>
+                                <p class="text-[11px] text-zinc-300 font-mono px-1">Penurunan Kekuatan Akibat Infiltrasi</p>
                             </div>
+
+                            <!-- Panah Alur 2 -->
+                            <div class="lg:col-span-1 flex justify-center text-amberforge-400 py-1 lg:py-0">
+                                <span class="text-xl font-mono font-bold transform rotate-90 lg:rotate-0">➔</span>
+                            </div>
+
+                            <!-- Step 3: Jenuh -->
+                            <div class="lg:col-span-3 group relative photo-contain-box rounded-xl overflow-hidden border border-rose-500/40 bg-dark-950 p-2 text-center cursor-pointer" onclick="openLightbox(document.getElementById('slide-sat-img').src, 'Rocscience Slide2 FoS = 1.1 (Kondisi Jenuh)', 'Simulasi muka air jenuh penuh yang mendekati ambang batas kritis Kepmen ESDM 1827.')">
+                                <div class="absolute top-3 left-3 z-10 px-2.5 py-0.5 bg-rose-500 text-white font-mono font-extrabold text-[10px] rounded shadow">
+                                    FoS 1.1 • JENUH
+                                </div>
+                                <div class="h-32 flex items-center justify-center overflow-hidden rounded-lg mt-5 mb-2">
+                                    <img id="slide-sat-img" src="img/Hasil FK Kondisi Jenuh.png" alt="FoS Jenuh 1.1" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Slide2 FoS Jenuh 1.1', 'GEOTEKNIK')">
+                                </div>
+                                <p class="text-[11px] text-zinc-300 font-mono px-1">Ambang Batas Kritis & Perlu Drainase</p>
+                            </div>
+
                         </div>
+
+                        <!-- Foto Survei Pendukung Singkat di Bawahnya -->
+                        <div class="pt-2 flex items-center justify-between gap-3 border-t border-white/5 text-xs text-zinc-400">
+                            <span class="font-mono text-[11px]">📍 Didukung Pengamatan Lapangan Quarry PNPB 6 Selatan</span>
+                            <button onclick="openLightbox('img/1.jpeg', 'Survei Lapangan PT Semen Padang', 'Observasi ketersediaan jenjang & struktur diskontinuitas lereng limestone Quarry PNPB 6 Selatan.')" class="text-amberforge-400 hover:underline font-mono text-[11px]">Lihat Foto Survei Lapangan Utama →</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -695,8 +726,9 @@
 
             <div class="max-w-5xl mx-auto space-y-8">
                 
+                <!-- IDE 2: FOTO UNGGULAN + REL THUMBNAIL (PERMATA) -->
                 <div class="glass-card p-6 sm:p-8 rounded-3xl border border-amberforge-500/30 relative">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-6">
                         <div>
                             <span class="inline-block px-2.5 py-0.5 rounded bg-amberforge-500/20 text-amberforge-400 font-mono text-[11px] font-bold mb-1">Kepemimpinan Krisis & Koordinasi Regional</span>
                             <h3 id="org-role-1" class="text-xl font-bold text-white">Koordinator Regional 1 (Sumatera)</h3>
@@ -712,43 +744,47 @@
                         <li>• Mengelola penggalangan dana, akuntabilitas laporan keuangan RAB, serta penyaluran bantuan kemanusiaan bencana di Aceh Tengah & Aceh Tamiang senilai <strong class="text-amberforge-400">Rp 173 Juta</strong>.</li>
                     </ul>
 
-                    <div class="bg-dark-900/80 p-4 rounded-2xl border border-white/5">
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="text-xs font-mono text-amberforge-400 font-bold uppercase tracking-wider">
-                                📷 Dokumentasi PERMATA INDONESIA (Forum Dialog, Aceh Tengah, Aceh Tamiang, & Micromine)
-                            </div>
+                    <!-- Layout Asimetris: Foto Utama Kiri + Rel Thumbnail Kanan -->
+                    <div class="bg-dark-900/90 p-4 rounded-2xl border border-white/5">
+                        <div class="text-[11px] font-mono text-amberforge-400 font-bold uppercase tracking-wider mb-3">
+                            📷 Dokumentasi Unggulan & Galeri Pendukung PERMATA INDONESIA
                         </div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                            <div class="group relative h-32 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-1" src="img/Forum dialog.jpeg" alt="Forum Dialog Wilayah I PERMATA" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Forum Dialog Wilayah I PERMATA', 'ORGANISASI')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-1').src, 'Forum Dialog Wilayah I PERMATA INDONESIA', 'Diskusi strategis isu pertambangan Sumatera yang dihadiri 80+ delegasi mahasiswa dan pimpinan institusi.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                            
+                            <!-- Foto Utama Kiri (Lebih Besar) -->
+                            <div class="lg:col-span-7 group relative h-64 sm:h-72 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Forum dialog.jpeg', 'Forum Dialog Wilayah I PERMATA INDONESIA', 'Diskusi strategis isu pertambangan Sumatera yang dihadiri 80+ delegasi mahasiswa dan pimpinan institusi.')">
+                                <img id="org-main-img-1" src="img/Forum dialog.jpeg" alt="Forum Dialog Wilayah I PERMATA" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Forum Dialog Wilayah I PERMATA', 'ORGANISASI')">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 text-left">
+                                    <span class="px-2 py-0.5 rounded bg-amberforge-500 text-dark-950 font-mono text-[9px] font-bold">FOTO UTAMA</span>
+                                    <div class="text-xs font-bold text-white mt-1">Forum Dialog Wilayah I PERMATA INDONESIA</div>
                                 </div>
                             </div>
-                            <div class="group relative h-32 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-2" src="img/Aksi Permata indonesia Aceh Tengah.jpeg" alt="Aksi Galang Dana Bencana Aceh Tengah" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Aksi Kemanusiaan Aceh Tengah', 'ORGANISASI')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-2').src, 'Aksi Kemanusiaan PERMATA INDONESIA - Aceh Tengah', 'Penyaluran langsung bantuan kemanusiaan dan logistik bencana di Aceh Tengah.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+
+                            <!-- Rel Thumbnail Vertikal Kanan -->
+                            <div class="lg:col-span-5 grid grid-cols-3 lg:grid-cols-1 gap-2.5">
+                                <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Aksi Permata indonesia Aceh Tengah.jpeg', 'Aksi Kemanusiaan PERMATA INDONESIA - Aceh Tengah', 'Penyaluran langsung bantuan kemanusiaan dan logistik bencana di Aceh Tengah.')">
+                                    <img src="img/Aksi Permata indonesia Aceh Tengah.jpeg" alt="Aceh Tengah" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Aksi Aceh Tengah', 'KEMANUSIAAN')">
+                                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-[10px] text-amberforge-300 font-mono font-bold">🔍 Zoom</div>
+                                </div>
+                                <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Aksi Permata indonesia Aceh Tamiang.jpeg', 'Aksi Kemanusiaan PERMATA INDONESIA - Aceh Tamiang', 'Distribusi bantuan logistik darurat banjir untuk korban bencana di Kabupaten Aceh Tamiang.')">
+                                    <img src="img/Aksi Permata indonesia Aceh Tamiang.jpeg" alt="Aceh Tamiang" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Aksi Aceh Tamiang', 'KEMANUSIAAN')">
+                                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-[10px] text-amberforge-300 font-mono font-bold">🔍 Zoom</div>
+                                </div>
+                                <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Pelatihan Software.jpeg', 'Pelatihan Software Micromine se-Sumatera', 'Workshop pemodelan tambang digital Micromine bersama pemateri profesional.')">
+                                    <img src="img/Pelatihan Software.jpeg" alt="Micromine" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Pelatihan Micromine', 'SOFTWARE')">
+                                    <div class="absolute inset-0 bg-black/80 flex items-center justify-center text-[11px] text-amberforge-300 font-mono font-bold">
+                                        +2 Foto Lainnya
+                                    </div>
                                 </div>
                             </div>
-                            <div class="group relative h-32 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-3" src="img/Aksi Permata indonesia Aceh Tamiang.jpeg" alt="Aksi Galang Dana Bencana Aceh Tamiang" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Aksi Kemanusiaan Aceh Tamiang', 'ORGANISASI')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-3').src, 'Aksi Kemanusiaan PERMATA INDONESIA - Aceh Tamiang', 'Distribusi bantuan logistik darurat banjir untuk korban bencana di Kabupaten Aceh Tamiang.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
-                                </div>
-                            </div>
-                            <div class="group relative h-32 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-4" src="img/Pelatihan Software.jpeg" alt="Pelatihan Micromine" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Pelatihan Software Micromine', 'ORGANISASI')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1.5 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-4').src, 'Pelatihan Software Micromine se-Sumatera', 'Workshop pemodelan tambang digital Micromine bersama pemateri profesional.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
 
+                <!-- IDE 2: FOTO UNGGULAN + REL THUMBNAIL (HMTP USK) -->
                 <div class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 relative">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-6">
                         <div>
                             <span class="inline-block px-2.5 py-0.5 rounded bg-amberforge-500/20 text-amberforge-400 font-mono text-[11px] font-bold mb-1">Kepemimpinan Internal Kampus & Hubungan Mahasiswa</span>
                             <h3 id="org-role-2" class="text-xl font-bold text-white">Staff Divisi Hubungan Mahasiswa (Humas) & Wakil Ketua Divisi Pengembangan Anggota</h3>
@@ -762,40 +798,44 @@
                         <li>• <strong>Staff Divisi Humas (2024):</strong> Mengeksekusi 13 program kerja jaringan alumni, Meet & Greet, serta mengelola platform layanan mahasiswa MINTOCARE. Dinobatkan sebagai <strong class="text-amberforge-400">Staff of the Month</strong> sebanyak 2 kali.</li>
                     </ul>
 
-                    <div class="bg-dark-900/80 p-4 rounded-2xl border border-white/5">
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="text-xs font-mono text-amberforge-400 font-bold uppercase tracking-wider">
-                                📷 Dokumentasi Divisi Humas & Pengembangan Anggota HMTP USK
-                            </div>
+                    <!-- Layout Asimetris: Foto Utama Kiri + Rel Thumbnail Kanan -->
+                    <div class="bg-dark-900/90 p-4 rounded-2xl border border-white/5">
+                        <div class="text-[11px] font-mono text-amberforge-400 font-bold uppercase tracking-wider mb-3">
+                            📷 Dokumentasi Unggulan & Galeri Pendukung HMTP USK
                         </div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-5" src="img/Humas.jpeg" alt="Divisi Humas HMTP USK & Staff of the Month Award" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Divisi Humas HMTP USK', 'HMTP USK')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-5').src, 'Divisi Humas HMTP USK - Staff of the Month', 'Apresiasi kinerja unggul sebagai Staff Divisi Hubungan Mahasiswa HMTP USK dalam pengabdian organisasi dan layanan MINTOCARE.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                            
+                            <!-- Foto Utama Kiri -->
+                            <div class="lg:col-span-7 group relative h-64 sm:h-72 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Humas.jpeg', 'Divisi Hubungan Mahasiswa HMTP USK - Staff of the Month', 'Apresiasi kinerja unggul sebagai Staff Divisi Hubungan Mahasiswa HMTP USK dalam pengabdian organisasi dan layanan MINTOCARE.')">
+                                <img id="org-main-img-2" src="img/Humas.jpeg" alt="Divisi Humas HMTP USK" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Divisi Humas HMTP USK', 'HMTP USK')">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 text-left">
+                                    <span class="px-2 py-0.5 rounded bg-amberforge-500 text-dark-950 font-mono text-[9px] font-bold">FOTO UTAMA</span>
+                                    <div class="text-xs font-bold text-white mt-1">Divisi Hubungan Mahasiswa HMTP USK — Staff of the Month Award</div>
                                 </div>
                             </div>
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-6" src="img/Organisasi 2.jpeg" alt="Divisi Pengembangan Anggota HMTP USK" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Kaderisasi HMTP USK', 'HMTP USK')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-6').src, 'Kaderisasi & Mentoring HMTP USK', 'Koordinasi tim Divisi Pengembangan Anggota dalam mengawal pembinaan karakter dan kebersamaan angkatan mahasiswa pertambangan.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
+
+                            <!-- Rel Thumbnail Vertikal Kanan -->
+                            <div class="lg:col-span-5 grid grid-cols-3 lg:grid-cols-1 gap-2.5">
+                                <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Organisasi 2.jpeg', 'Kaderisasi & Mentoring HMTP USK', 'Koordinasi tim Divisi Pengembangan Anggota dalam mengawal pembinaan karakter dan kebersamaan angkatan mahasiswa pertambangan.')">
+                                    <img src="img/Organisasi 2.jpeg" alt="Kaderisasi" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Kaderisasi', 'HMTP USK')">
+                                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-[10px] text-amberforge-300 font-mono font-bold">🔍 Zoom</div>
+                                </div>
+                                <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Organisasi.jpeg', 'Pengurus HMTP USK', 'Sinergi antar pengurus himpunan mahasiswa dalam menyukseskan program kerja akademis dan keorganisasian.')">
+                                    <img src="img/Organisasi.jpeg" alt="Pengurus" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Pengurus', 'HMTP USK')">
+                                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-[10px] text-amberforge-300 font-mono font-bold">🔍 Zoom</div>
+                                </div>
+                                <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Organisasi 3.jpeg', 'Keluarga Besar HMTP USK - Since 2012', 'Momen kebersamaan seluruh elemen mahasiswa dan alumni Teknik Pertambangan Universitas Syiah Kuala.')">
+                                    <img src="img/Organisasi 3.jpeg" alt="Keluarga Besar" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Keluarga Besar', 'HMTP USK')">
+                                    <div class="absolute inset-0 bg-black/80 flex items-center justify-center text-[11px] text-amberforge-300 font-mono font-bold">
+                                        +3 Foto Lainnya
+                                    </div>
                                 </div>
                             </div>
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-7" src="img/Organisasi.jpeg" alt="Tim Pengurus HMTP USK" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Pengurus HMTP USK', 'HMTP USK')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-7').src, 'Pengurus HMTP USK', 'Sinergi antar pengurus himpunan mahasiswa dalam menyukseskan program kerja akademis dan keorganisasian.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
-                                </div>
-                            </div>
-                            <div class="group relative h-36 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950">
-                                <img id="org-img-8" src="img/Organisasi 3.jpeg" alt="Keluarga Besar HMTP USK SINCE 2012" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'HMTP USK Since 2012', 'HMTP USK')">
-                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-1 p-1">
-                                    <button onclick="openLightbox(document.getElementById('org-img-8').src, 'Keluarga Besar HMTP USK - Since 2012', 'Momen kebersamaan seluruh elemen mahasiswa dan alumni Teknik Pertambangan Universitas Syiah Kuala.')" class="px-2 py-1 bg-dark-900/90 text-white rounded text-[10px] font-mono font-bold hover:bg-amberforge-500 transition cursor-pointer">🔍</button>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -1113,7 +1153,7 @@
                     {
                         id: '13',
                         category: 'professional',
-                        title: 'Divisi Humas HMTP USK - Staff of the Month',
+                        title: 'Divisi Hubungan Mahasiswa HMTP USK - Staff of the Month',
                         desc: 'Apresiasi kinerja unggul sebagai Staff Divisi Hubungan Mahasiswa HMTP USK dalam layanan komunikasi MINTOCARE.',
                         img: 'img/Humas.jpeg'
                     },
