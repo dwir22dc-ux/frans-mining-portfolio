@@ -6,10 +6,18 @@ media_folder: "img"
 public_folder: "/img"
 
 collections:
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "content"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "site_data"
+    label: "Pengaturan & Galeri Portofolio"
+    files:
+      - file: "content/portfolio-data.json"
+        label: "Data Galeri & Proyek"
+        name: "portfolio_data"
+        fields:
+          - label: "Daftar Proyek & Galeri"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {label: "Judul Proyek", name: "title", widget: "string"}
+              - {label: "Kategori", name: "category", widget: "select", options: ["geotech", "iot", "crisis", "professional"]}
+              - {label: "Deskripsi", name: "desc", widget: "text"}
+              - {label: "Foto / Gambar", name: "img", widget: "image"}
