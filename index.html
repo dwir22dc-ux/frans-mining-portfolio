@@ -690,8 +690,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                 <div>
-                    <span class="text-xs font-mono font-bold text-amberforge-400 tracking-wider uppercase bg-amberforge-500/10 px-3 py-1 rounded-full border border-amberforge-500/20">Galeri & Dokumentasi Strategis</span>
-                    <h2 id="section-title-proyek" class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Portofolio Profesional Berdasarkan Klasifikasi Industri</h2>
+                    <span class="text-xs font-mono font-bold text-amberforge-400 tracking-wider uppercase bg-amberforge-500/10 px-3 py-1 rounded-full border border-amberforge-500/20">Galeri & Dokumentasi</span>
+                    <h2 id="section-title-proyek" class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Project & Dokumentasi</h2>
                 </div>
             </div>
 
@@ -704,7 +704,7 @@
             </div>
 
             <div id="gallery-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Populated dynamically via JS -->
+                <!-- Populated dynamically via JS from CMS portfolio-data.json -->
             </div>
         </div>
     </section>
@@ -986,106 +986,131 @@
         }
         drawCanvas();
 
-        const defaultGallery = [
-            {
-                id: '1',
-                category: 'geotech',
-                title: 'Survei Geoteknik Quarry PNPB 6 Selatan',
-                desc: 'Observasi ketersediaan jenjang, struktur diskontinuitas, dan potensi kelongsoran pada lereng limestone PT Semen Padang.',
-                img: 'img/1.jpeg'
-            },
-            {
-                id: '2',
-                category: 'iot',
-                title: 'Prototipe Landslide Early Warning System (LEWIS)',
-                desc: 'Simulasi presipitasi & uji ambang saturasi kelembaban tanah/claystone Saree menggunakan Arduino Uno, sensor kelembaban, buzzer, dan LED indikator bahaya longsor.',
-                img: 'img/LEWIS.jpeg'
-            },
-            {
-                id: '3',
-                category: 'iot',
-                title: 'Asistensi Teknis & Kalibrasi Hardware LEWIS',
-                desc: 'Diskusi perancangan rangkaian mikrokontroler Arduino & pendaftaran log data sensor EWS mitigasi bencana bersama Dosen Pembimbing.',
-                img: 'img/Perancangan LEWIS.jpeg'
-            },
-            {
-                id: '4',
-                category: 'geotech',
-                title: 'Pengambilan Sampel Fieldwork Lereng Saree (Aceh Besar)',
-                desc: 'Pengukuran geometri lereng dan pengambilan sampel batuan/tanah di Saree menggunakan meteran pita, kompas geologi, serta palu geologi untuk uji simulasi presipitasi.',
-                img: 'img/Tambahan 1.jpeg'
-            },
-            {
-                id: '5',
-                category: 'geotech',
-                title: 'Analisis Slide2 - Kondisi Kering (FoS 1.6)',
-                desc: 'Simulasi limit equilibrium metode Bishop Simplified tanpa pengaruh muka air tanah, menghasilkan FK aman 1.6.',
-                img: 'img/Hasil FK Kondisi Kering.png'
-            },
-            {
-                id: '6',
-                category: 'geotech',
-                title: 'Analisis Slide2 - Kondisi Basah (FoS 1.4)',
-                desc: 'Pengaruh infiltrasi air hujan terhadap penurunan kuat geser batuan quarry.',
-                img: 'img/Hasil FK Kondisi Basah.png'
-            },
-            {
-                id: '7',
-                category: 'geotech',
-                title: 'Analisis Slide2 - Kondisi Jenuh (FoS 1.1)',
-                desc: 'Simulasi muka air tanah penuh yang menurunkan FK hingga 1.1 mendekati ambang batas kritis Kepmen ESDM 1827.',
-                img: 'img/Hasil FK Kondisi Jenuh.png'
-            },
-            {
-                id: '8',
-                category: 'geotech',
-                title: 'Sidang Skripsi & Evaluasi Akademik Geoteknik',
-                desc: 'Presentasi pertanggungjawaban ilmiah hasil penelitian geoteknik bersama Dosen Pembimbing Hendra Harisman, S.T., M.Eng.Sc., Ir. Zati Hulwani, S.T., M.T. dan Dosen Penguji.',
-                img: 'img/tambahan SIDANG.jpeg'
-            },
-            {
-                id: '9',
-                category: 'crisis',
-                title: 'Aksi Kemanusiaan PERMATA - Aceh Tengah',
-                desc: 'Penyaluran langsung bantuan kemanusiaan dan logistik darurat bencana di Kabupaten Aceh Tengah senilai Rp 173 Juta.',
-                img: 'img/Aksi Permata indonesia Aceh Tengah.jpeg'
-            },
-            {
-                id: '10',
-                category: 'crisis',
-                title: 'Aksi Kemanusiaan PERMATA - Aceh Tamiang',
-                desc: 'Distribusi bantuan logistik darurat banjir dan korban bencana di Kabupaten Aceh Tamiang.',
-                img: 'img/Aksi Permata indonesia Aceh Tamiang.jpeg'
-            },
-            {
-                id: '11',
-                category: 'professional',
-                title: 'Forum Dialog Wilayah I PERMATA INDONESIA',
-                desc: 'Diskusi strategis isu pertambangan Sumatera yang dihadiri 80+ delegasi mahasiswa dan pimpinan institusi.',
-                img: 'img/Forum dialog.jpeg'
-            },
-            {
-                id: '12',
-                category: 'professional',
-                title: 'Pelatihan Software Micromine se-Sumatera',
-                desc: 'Workshop pemodelan tambang digital Micromine bersama instruktur profesional & pemateri PERMATA INDONESIA.',
-                img: 'img/Pelatihan Software.jpeg'
-            },
-            {
-                id: '13',
-                category: 'professional',
-                title: 'Divisi Humas HMTP USK - Staff of the Month',
-                desc: 'Apresiasi kinerja unggul sebagai Staff Divisi Hubungan Masyarakat HMTP USK dalam layanan komunikasi MINTOCARE.',
-                img: 'img/Humas.jpeg'
-            },
-            {
-                id: '14',
-                category: 'professional',
-                title: 'Keluarga Besar HMTP USK - Since 2012',
-                desc: 'Momen kebersamaan seluruh elemen mahasiswa dan alumni Teknik Pertambangan Universitas Syiah Kuala.',
-                img: 'img/Organisasi 3.jpeg'
+        let defaultGallery = [];
+
+        async function loadPortfolioData() {
+            try {
+                const response = await fetch('content/portfolio-data.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data && data.projects && data.projects.length > 0) {
+                        defaultGallery = data.projects.map((p, index) => ({
+                            id: String(index + 1),
+                            category: p.category || 'geotech',
+                            title: p.title || 'Tanpa Judul',
+                            desc: p.desc || '',
+                            img: p.img || 'img/1.jpeg'
+                        }));
+                    }
+                }
+            } catch (error) {
+                console.log('Menggunakan galeri default statis.');
             }
-        ];
+            
+            if (defaultGallery.length === 0) {
+                defaultGallery = [
+                    {
+                        id: '1',
+                        category: 'geotech',
+                        title: 'Survei Geoteknik Quarry PNPB 6 Selatan',
+                        desc: 'Observasi ketersediaan jenjang, struktur diskontinuitas, dan potensi kelongsoran pada lereng limestone PT Semen Padang.',
+                        img: 'img/1.jpeg'
+                    },
+                    {
+                        id: '2',
+                        category: 'iot',
+                        title: 'Prototipe Landslide Early Warning System (LEWIS)',
+                        desc: 'Simulasi presipitasi & uji ambang saturasi kelembaban tanah/claystone Saree menggunakan Arduino Uno, sensor kelembaban, buzzer, dan LED indikator bahaya longsor.',
+                        img: 'img/LEWIS.jpeg'
+                    },
+                    {
+                        id: '3',
+                        category: 'iot',
+                        title: 'Asistensi Teknis & Kalibrasi Hardware LEWIS',
+                        desc: 'Diskusi perancangan rangkaian mikrokontroler Arduino & pendaftaran log data sensor EWS mitigasi bencana bersama Dosen Pembimbing.',
+                        img: 'img/Perancangan LEWIS.jpeg'
+                    },
+                    {
+                        id: '4',
+                        category: 'geotech',
+                        title: 'Pengambilan Sampel Fieldwork Lereng Saree (Aceh Besar)',
+                        desc: 'Pengukuran geometri lereng dan pengambilan sampel batuan/tanah di Saree menggunakan meteran pita, kompas geologi, serta palu geologi untuk uji simulasi presipitasi.',
+                        img: 'img/Tambahan 1.jpeg'
+                    },
+                    {
+                        id: '5',
+                        category: 'geotech',
+                        title: 'Analisis Slide2 - Kondisi Kering (FoS 1.6)',
+                        desc: 'Simulasi limit equilibrium metode Bishop Simplified tanpa pengaruh muka air tanah, menghasilkan FK aman 1.6.',
+                        img: 'img/Hasil FK Kondisi Kering.png'
+                    },
+                    {
+                        id: '6',
+                        category: 'geotech',
+                        title: 'Analisis Slide2 - Kondisi Basah (FoS 1.4)',
+                        desc: 'Pengaruh infiltrasi air hujan terhadap penurunan kuat geser batuan quarry.',
+                        img: 'img/Hasil FK Kondisi Basah.png'
+                    },
+                    {
+                        id: '7',
+                        category: 'geotech',
+                        title: 'Analisis Slide2 - Kondisi Jenuh (FoS 1.1)',
+                        desc: 'Simulasi muka air tanah penuh yang menurunkan FK hingga 1.1 mendekati ambang batas kritis Kepmen ESDM 1827.',
+                        img: 'img/Hasil FK Kondisi Jenuh.png'
+                    },
+                    {
+                        id: '8',
+                        category: 'geotech',
+                        title: 'Sidang Skripsi & Evaluasi Akademik Geoteknik',
+                        desc: 'Presentasi pertanggungjawaban ilmiah hasil penelitian geoteknik bersama Dosen Pembimbing Hendra Harisman, S.T., M.Eng.Sc., Ir. Zati Hulwani, S.T., M.T. dan Dosen Penguji.',
+                        img: 'img/tambahan SIDANG.jpeg'
+                    },
+                    {
+                        id: '9',
+                        category: 'crisis',
+                        title: 'Aksi Kemanusiaan PERMATA - Aceh Tengah',
+                        desc: 'Penyaluran langsung bantuan kemanusiaan dan logistik darurat bencana di Kabupaten Aceh Tengah senilai Rp 173 Juta.',
+                        img: 'img/Aksi Permata indonesia Aceh Tengah.jpeg'
+                    },
+                    {
+                        id: '10',
+                        category: 'crisis',
+                        title: 'Aksi Kemanusiaan PERMATA - Aceh Tamiang',
+                        desc: 'Distribusi bantuan logistik darurat banjir dan korban bencana di Kabupaten Aceh Tamiang.',
+                        img: 'img/Aksi Permata indonesia Aceh Tamiang.jpeg'
+                    },
+                    {
+                        id: '11',
+                        category: 'professional',
+                        title: 'Forum Dialog Wilayah I PERMATA INDONESIA',
+                        desc: 'Diskusi strategis isu pertambangan Sumatera yang dihadiri 80+ delegasi mahasiswa dan pimpinan institusi.',
+                        img: 'img/Forum dialog.jpeg'
+                    },
+                    {
+                        id: '12',
+                        category: 'professional',
+                        title: 'Pelatihan Software Micromine se-Sumatera',
+                        desc: 'Workshop pemodelan tambang digital Micromine bersama instruktur profesional & pemateri PERMATA INDONESIA.',
+                        img: 'img/Pelatihan Software.jpeg'
+                    },
+                    {
+                        id: '13',
+                        category: 'professional',
+                        title: 'Divisi Humas HMTP USK - Staff of the Month',
+                        desc: 'Apresiasi kinerja unggul sebagai Staff Divisi Hubungan Masyarakat HMTP USK dalam layanan komunikasi MINTOCARE.',
+                        img: 'img/Humas.jpeg'
+                    },
+                    {
+                        id: '14',
+                        category: 'professional',
+                        title: 'Keluarga Besar HMTP USK - Since 2012',
+                        desc: 'Momen kebersamaan seluruh elemen mahasiswa dan alumni Teknik Pertambangan Universitas Syiah Kuala.',
+                        img: 'img/Organisasi 3.jpeg'
+                    }
+                ];
+            }
+            renderGallery();
+        }
 
         let currentFilter = 'all';
 
@@ -1266,7 +1291,7 @@
             }, 4000);
         }
 
-        renderGallery();
+        loadPortfolioData();
         window.calculateFoS();
         window.calculateRMR();
     </script>
