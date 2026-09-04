@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: dwir22dc-ux/frans-mining-portfolio
+  name: git-gateway
   branch: main
 
 media_folder: "img"
