@@ -1,3 +1,10 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "title": "Survei Geoteknik Quarry PNPB 6 Selatan",
+      "category": "geotech",
+      "desc": "Observasi ketersediaan jenjang, struktur diskontinuitas, dan potensi kelongsoran pada lereng limestone PT Semen Padang.",
+      "img": "/img/1.jpeg"
+    }
+  ]
 }
