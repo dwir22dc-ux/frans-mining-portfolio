@@ -1,9 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: dwir22dc-ux/frans-mining-portfolio
   branch: main
 
-media_folder: "gambar"
-public_folder: "/gambar"
+media_folder: "img"
+public_folder: "/img"
 
 collections:
   - name: "portfolio"
