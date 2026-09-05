@@ -23,6 +23,18 @@
       "category": "geotech",
       "desc": "Simulasi muka air tanah penuh yang menurunkan FK hingga 1.1 mendekati ambang batas kritis Kepmen ESDM 1827.",
       "img": "/img/Hasil FK Kondisi Jenuh.png"
+    },
+    {
+      "title": "Prototipe Landslide Early Warning System (LEWIS)",
+      "category": "iot",
+      "desc": "Simulasi presipitasi & uji ambang saturasi kelembaban tanah/claystone Saree menggunakan Arduino Uno, sensor kelembaban, buzzer, dan LED indikator bahaya longsor.",
+      "img": "/img/LEWIS.jpeg"
+    },
+    {
+      "title": "Finalisasi LEWIS",
+      "category": "iot",
+      "desc": "Finalisasi perancangan rangkaian mikrokontroler Arduino & pendaftaran log data sensor LEWIS mitigasi bencana bersama Dosen Pembimbing.",
+      "img": "/img/Perancangan LEWIS.jpeg"
     }
   ]
 }
