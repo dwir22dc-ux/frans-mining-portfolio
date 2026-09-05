@@ -35,6 +35,30 @@
       "category": "iot",
       "desc": "Finalisasi perancangan rangkaian mikrokontroler Arduino & pendaftaran log data sensor LEWIS mitigasi bencana bersama Dosen Pembimbing.",
       "img": "/img/Perancangan LEWIS.jpeg"
+    },
+    {
+      "img": "/img/Aksi Permata indonesia Aceh Tamiang.jpeg",
+      "title": "Aksi Kemanusiaan PERMATA INDONESIA - Aceh Tamiang",
+      "category": "crisis",
+      "desc": "Distribusi bantuan logistik darurat banjir dan penanganan korban bencana di Kabupaten Aceh Tamiang."
+    },
+    {
+      "title": "Aksi Kemanusiaan PERMATA INDONESIA - Aceh Tengah",
+      "category": "crisis",
+      "desc": "Penyaluran langsung bantuan kemanusiaan dan logistik darurat bencana di Kabupaten Aceh.",
+      "img": "/img/Aksi Permata indonesia Aceh Tengah.jpeg"
+    },
+    {
+      "title": "Forum Dialog Wilayah I PERMATA INDONESIA",
+      "category": "professional",
+      "desc": "Diskusi strategis isu pertambangan Sumatera yang dihadiri 80+ delegasi mahasiswa dan pimpinan institusi.",
+      "img": "/img/Forum dialog.jpeg"
+    },
+    {
+      "title": "Pelatihan Software Micromine se-Sumatera",
+      "category": "professional",
+      "desc": "Workshop pemodelan tambang menggunakan software Micromine bersama instruktur profesional & dosen hebat teknik pertambangan.",
+      "img": "/img/Pelatihan Software.jpeg"
     }
   ]
 }
