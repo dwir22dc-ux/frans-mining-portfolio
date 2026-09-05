@@ -5,6 +5,24 @@
       "category": "geotech",
       "desc": "Observasi ketersediaan jenjang, struktur diskontinuitas, dan potensi kelongsoran pada lereng limestone PT Semen Padang.",
       "img": "/img/1.jpeg"
+    },
+    {
+      "img": "/img/Hasil FK Kondisi Kering.png",
+      "category": "geotech",
+      "desc": "Simulasi limit equilibrium metode Bishop Simplified tanpa pengaruh muka air tanah, menghasilkan FK aman 1.6.",
+      "title": "Analisis Slide2 - Kondisi Kering (FoS 1.6)"
+    },
+    {
+      "img": "/img/Hasil FK Kondisi Basah.png",
+      "title": "Analisis Slide2 - Kondisi Basah (FoS 1.4)",
+      "category": "geotech",
+      "desc": "Pengaruh infiltrasi air hujan terhadap penurunan kuat geser batuan quarry."
+    },
+    {
+      "title": "Analisis Slide2 - Kondisi Jenuh (FoS 1.1)",
+      "category": "geotech",
+      "desc": "Simulasi muka air tanah penuh yang menurunkan FK hingga 1.1 mendekati ambang batas kritis Kepmen ESDM 1827.",
+      "img": "/img/Hasil FK Kondisi Jenuh.png"
     }
   ]
 }
