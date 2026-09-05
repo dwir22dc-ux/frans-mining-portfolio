@@ -85,9 +85,7 @@
         }
 
         .glass-card:hover {
-            border-color: rgba(255, 107, 0, 0.45);
-            box-shadow: 0 16px 40px -10px rgba(255, 107, 0, 0.25);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
 
         ::-webkit-scrollbar {
@@ -439,7 +437,7 @@
                         </div>
                     </div>
 
-                    <!-- IDE 1: STRIP PERBANDINGAN BERNARASI (SLIDE2 TREND) -->
+                    <!-- Slide2 Trend Strip -->
                     <div class="bg-dark-900/90 p-5 rounded-2xl border border-white/10 space-y-4">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-3">
                             <div>
@@ -451,7 +449,6 @@
 
                         <div class="grid grid-cols-1 lg:grid-cols-11 gap-3 items-center">
                             
-                            <!-- Step 1: Kering -->
                             <div class="lg:col-span-3 group relative photo-contain-box rounded-xl overflow-hidden border border-emerald-500/40 bg-dark-950 p-2 text-center cursor-pointer" onclick="openLightbox(document.getElementById('slide-dry-img').src, 'Rocscience Slide2 FoS = 1.6 (Kondisi Kering)', 'Analisis batas kesetimbangan metode Bishop Simplified tanpa pengaruh muka air tanah.')">
                                 <div class="absolute top-3 left-3 z-10 px-2.5 py-0.5 bg-emerald-500 text-dark-950 font-mono font-extrabold text-[10px] rounded shadow">
                                     FoS 1.6 • KERING
@@ -462,12 +459,10 @@
                                 <p class="text-[11px] text-zinc-300 font-mono px-1">Stabil & Aman (Ambang Kepmen ESDM)</p>
                             </div>
 
-                            <!-- Panah Alur 1 -->
                             <div class="lg:col-span-1 flex justify-center text-amberforge-400 py-1 lg:py-0">
                                 <span class="text-xl font-mono font-bold transform rotate-90 lg:rotate-0">➔</span>
                             </div>
 
-                            <!-- Step 2: Basah -->
                             <div class="lg:col-span-3 group relative photo-contain-box rounded-xl overflow-hidden border border-amber-500/40 bg-dark-950 p-2 text-center cursor-pointer" onclick="openLightbox(document.getElementById('slide-wet-img').src, 'Rocscience Slide2 FoS = 1.4 (Kondisi Basah)', 'Penurunan faktor keamanan akibat rembesan air hujan pada lereng limestone quarry.')">
                                 <div class="absolute top-3 left-3 z-10 px-2.5 py-0.5 bg-amber-500 text-dark-950 font-mono font-extrabold text-[10px] rounded shadow">
                                     FoS 1.4 • BASAH
@@ -478,12 +473,10 @@
                                 <p class="text-[11px] text-zinc-300 font-mono px-1">Penurunan Kekuatan Akibat Infiltrasi</p>
                             </div>
 
-                            <!-- Panah Alur 2 -->
                             <div class="lg:col-span-1 flex justify-center text-amberforge-400 py-1 lg:py-0">
                                 <span class="text-xl font-mono font-bold transform rotate-90 lg:rotate-0">➔</span>
                             </div>
 
-                            <!-- Step 3: Jenuh -->
                             <div class="lg:col-span-3 group relative photo-contain-box rounded-xl overflow-hidden border border-rose-500/40 bg-dark-950 p-2 text-center cursor-pointer" onclick="openLightbox(document.getElementById('slide-sat-img').src, 'Rocscience Slide2 FoS = 1.1 (Kondisi Jenuh)', 'Simulasi muka air jenuh penuh yang mendekati ambang batas kritis Kepmen ESDM 1827.')">
                                 <div class="absolute top-3 left-3 z-10 px-2.5 py-0.5 bg-rose-500 text-white font-mono font-extrabold text-[10px] rounded shadow">
                                     FoS 1.1 • JENUH
@@ -496,7 +489,6 @@
 
                         </div>
 
-                        <!-- Foto Survei Pendukung Singkat di Bawahnya -->
                         <div class="pt-2 flex items-center justify-between gap-3 border-t border-white/5 text-xs text-zinc-400">
                             <span class="font-mono text-[11px]">📍 Didukung Pengamatan Lapangan Quarry PNPB 6 Selatan</span>
                             <button onclick="openLightbox('img/1.jpeg', 'Survei Lapangan PT Semen Padang', 'Observasi ketersediaan jenjang & struktur diskontinuitas lereng limestone Quarry PNPB 6 Selatan.')" class="text-amberforge-400 hover:underline font-mono text-[11px]">Lihat Foto Survei Lapangan Utama →</button>
@@ -726,7 +718,7 @@
 
             <div class="max-w-5xl mx-auto space-y-8">
                 
-                <!-- IDE 2: FOTO UNGGULAN + REL THUMBNAIL (PERMATA) -->
+                <!-- PERMATA -->
                 <div class="glass-card p-6 sm:p-8 rounded-3xl border border-amberforge-500/30 relative">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-6">
                         <div>
@@ -744,14 +736,12 @@
                         <li>• Mengelola penggalangan dana, akuntabilitas laporan keuangan RAB, serta penyaluran bantuan kemanusiaan bencana di Aceh Tengah & Aceh Tamiang senilai <strong class="text-amberforge-400">Rp 173 Juta</strong>.</li>
                     </ul>
 
-                    <!-- Layout Asimetris: Foto Utama Kiri + Rel Thumbnail Kanan -->
                     <div class="bg-dark-900/90 p-4 rounded-2xl border border-white/5">
                         <div class="text-[11px] font-mono text-amberforge-400 font-bold uppercase tracking-wider mb-3">
                             📷 Dokumentasi Unggulan & Galeri Pendukung PERMATA INDONESIA
                         </div>
                         <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
                             
-                            <!-- Foto Utama Kiri (Lebih Besar) -->
                             <div class="lg:col-span-7 group relative h-64 sm:h-72 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Forum dialog.jpeg', 'Forum Dialog Wilayah I PERMATA INDONESIA', 'Diskusi strategis isu pertambangan Sumatera yang dihadiri 80+ delegasi mahasiswa dan pimpinan institusi.')">
                                 <img id="org-main-img-1" src="img/Forum dialog.jpeg" alt="Forum Dialog Wilayah I PERMATA" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Forum Dialog Wilayah I PERMATA', 'ORGANISASI')">
                                 <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 text-left">
@@ -760,7 +750,6 @@
                                 </div>
                             </div>
 
-                            <!-- Rel Thumbnail Vertikal Kanan -->
                             <div class="lg:col-span-5 grid grid-cols-3 lg:grid-cols-1 gap-2.5">
                                 <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Aksi Permata indonesia Aceh Tengah.jpeg', 'Aksi Kemanusiaan PERMATA INDONESIA - Aceh Tengah', 'Penyaluran langsung bantuan kemanusiaan dan logistik bencana di Aceh Tengah.')">
                                     <img src="img/Aksi Permata indonesia Aceh Tengah.jpeg" alt="Aceh Tengah" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Aksi Aceh Tengah', 'KEMANUSIAAN')">
@@ -782,7 +771,7 @@
                     </div>
                 </div>
 
-                <!-- IDE 2: FOTO UNGGULAN + REL THUMBNAIL (HMTP USK) -->
+                <!-- HMTP USK -->
                 <div class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 relative">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-6">
                         <div>
@@ -798,14 +787,12 @@
                         <li>• <strong>Staff Divisi Humas (2024):</strong> Mengeksekusi 13 program kerja jaringan alumni, Meet & Greet, serta mengelola platform layanan mahasiswa MINTOCARE. Dinobatkan sebagai <strong class="text-amberforge-400">Staff of the Month</strong> sebanyak 2 kali.</li>
                     </ul>
 
-                    <!-- Layout Asimetris: Foto Utama Kiri + Rel Thumbnail Kanan -->
                     <div class="bg-dark-900/90 p-4 rounded-2xl border border-white/5">
                         <div class="text-[11px] font-mono text-amberforge-400 font-bold uppercase tracking-wider mb-3">
                             📷 Dokumentasi Unggulan & Galeri Pendukung HMTP USK
                         </div>
                         <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
                             
-                            <!-- Foto Utama Kiri -->
                             <div class="lg:col-span-7 group relative h-64 sm:h-72 photo-contain-box rounded-xl overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Humas.jpeg', 'Divisi Hubungan Mahasiswa HMTP USK - Staff of the Month', 'Apresiasi kinerja unggul sebagai Staff Divisi Hubungan Mahasiswa HMTP USK dalam pengabdian organisasi dan layanan MINTOCARE.')">
                                 <img id="org-main-img-2" src="img/Humas.jpeg" alt="Divisi Humas HMTP USK" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, 'Divisi Humas HMTP USK', 'HMTP USK')">
                                 <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 text-left">
@@ -814,7 +801,6 @@
                                 </div>
                             </div>
 
-                            <!-- Rel Thumbnail Vertikal Kanan -->
                             <div class="lg:col-span-5 grid grid-cols-3 lg:grid-cols-1 gap-2.5">
                                 <div class="group relative h-22 lg:h-22 photo-contain-box rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-dark-950 cursor-pointer" onclick="openLightbox('img/Organisasi 2.jpeg', 'Kaderisasi & Mentoring HMTP USK', 'Koordinasi tim Divisi Pengembangan Anggota dalam mengawal pembinaan karakter dan kebersamaan angkatan mahasiswa pertambangan.')">
                                     <img src="img/Organisasi 2.jpeg" alt="Kaderisasi" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" onerror="handleImageError(this, 'Kaderisasi', 'HMTP USK')">
@@ -842,7 +828,7 @@
 
     <div class="glow-line"></div>
 
-    <!-- 8. DOKUMENTASI PROYEK -->
+    <!-- 8. DOKUMENTASI PROYEK & GALERI (DENGAN IDE 1, 2, & 3) -->
     <section id="proyek" class="py-20 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
@@ -852,16 +838,39 @@
                 </div>
             </div>
 
+            <!-- IDE 1: STRIP ANGKA PENCAPAIAN (HEADLINE STATS) -->
+            <div class="glass-card rounded-2xl p-5 mb-10 border border-amberforge-500/30 bg-gradient-to-r from-dark-900 via-dark-850 to-dark-900 shadow-orange-glow">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+                    <div class="pt-2 md:pt-0">
+                        <div class="text-2xl sm:text-3xl font-mono font-black text-amberforge-400">14</div>
+                        <div class="text-[11px] sm:text-xs text-zinc-300 mt-1 font-medium">Dokumentasi Proyek & Kegiatan</div>
+                    </div>
+                    <div class="pt-2 md:pt-0">
+                        <div class="text-2xl sm:text-3xl font-mono font-black text-teal-400">3</div>
+                        <div class="text-[11px] sm:text-xs text-zinc-300 mt-1 font-medium">Metode Analisis (RMR/SMR, Slide2, IoT)</div>
+                    </div>
+                    <div class="pt-2 md:pt-0">
+                        <div class="text-2xl sm:text-3xl font-mono font-black text-rose-400">1.000+</div>
+                        <div class="text-[11px] sm:text-xs text-zinc-300 mt-1 font-medium">Anggota Terkoordinasi (Sumatera)</div>
+                    </div>
+                    <div class="pt-2 md:pt-0">
+                        <div class="text-2xl sm:text-3xl font-mono font-black text-purple-400">Rp 173 Jt</div>
+                        <div class="text-[11px] sm:text-xs text-zinc-300 mt-1 font-medium">Dana Kemanusiaan Tersalurkan</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Kategori dengan Warna Indikator -->
             <div class="flex flex-wrap gap-2 mb-8 border-b border-white/10 pb-4">
-                <button onclick="filterGallery('all')" id="filter-all" class="filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-amberforge-500 text-white cursor-pointer">Semua Kategori</button>
-                <button onclick="filterGallery('geotech')" id="filter-geotech" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-zinc-400 border border-white/10 hover:border-amberforge-500/40 cursor-pointer">Geoteknik & Tambang</button>
-                <button onclick="filterGallery('iot')" id="filter-iot" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-zinc-400 border border-white/10 hover:border-amberforge-500/40 cursor-pointer">Riset & IoT Inovasi</button>
-                <button onclick="filterGallery('crisis')" id="filter-crisis" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-zinc-400 border border-white/10 hover:border-amberforge-500/40 cursor-pointer">Manajemen Krisis & Kemanusiaan</button>
-                <button onclick="filterGallery('professional')" id="filter-professional" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-zinc-400 border border-white/10 hover:border-amberforge-500/40 cursor-pointer">Organisasi & Profesi</button>
+                <button onclick="filterGallery('all')" id="filter-all" class="filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-amberforge-500 text-white cursor-pointer transition">Semua Kategori</button>
+                <button onclick="filterGallery('geotech')" id="filter-geotech" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-amber-400 border border-amber-500/20 hover:border-amber-500/60 cursor-pointer transition">⚡ Geoteknik & Tambang</button>
+                <button onclick="filterGallery('iot')" id="filter-iot" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-teal-400 border border-teal-500/20 hover:border-teal-500/60 cursor-pointer transition">💧 Riset & IoT Inovasi</button>
+                <button onclick="filterGallery('crisis')" id="filter-crisis" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-rose-400 border border-rose-500/20 hover:border-rose-500/60 cursor-pointer transition">🛡️ Manajemen Krisis & Kemanusiaan</button>
+                <button onclick="filterGallery('professional')" id="filter-professional" class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-purple-400 border border-purple-500/20 hover:border-purple-500/60 cursor-pointer transition">🏛️ Organisasi & Profesi</button>
             </div>
 
             <div id="gallery-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Populated dynamically via JS from CMS portfolio-data.json -->
+                <!-- Rendered dynamically via JS -->
             </div>
         </div>
     </section>
@@ -1056,7 +1065,8 @@
                             category: p.category || 'geotech',
                             title: p.title || 'Tanpa Judul',
                             desc: p.desc || '',
-                            img: p.img || 'img/1.jpeg'
+                            img: p.img || 'img/1.jpeg',
+                            metric: p.metric || ''
                         }));
                     }
                 }
@@ -1071,98 +1081,112 @@
                         category: 'geotech',
                         title: 'Survei Geoteknik Quarry PNPB 6 Selatan',
                         desc: 'Observasi ketersediaan jenjang, struktur diskontinuitas, dan potensi kelongsoran pada lereng limestone PT Semen Padang.',
-                        img: 'img/1.jpeg'
+                        img: 'img/1.jpeg',
+                        metric: 'RMR 62 (Good)'
                     },
                     {
                         id: '2',
                         category: 'iot',
                         title: 'Prototipe Landslide Early Warning System (LEWIS)',
                         desc: 'Simulasi presipitasi & uji ambang saturasi kelembaban tanah/claystone Saree menggunakan Arduino Uno, sensor kelembaban, buzzer, dan LED indikator bahaya longsor.',
-                        img: 'img/LEWIS.jpeg'
+                        img: 'img/LEWIS.jpeg',
+                        metric: 'IoT Sensor'
                     },
                     {
                         id: '3',
                         category: 'iot',
                         title: 'Asistensi Teknis & Kalibrasi Hardware LEWIS',
                         desc: 'Diskusi perancangan rangkaian mikrokontroler Arduino & pendaftaran log data sensor EWS mitigasi bencana bersama Dosen Pembimbing.',
-                        img: 'img/Perancangan LEWIS.jpeg'
+                        img: 'img/Perancangan LEWIS.jpeg',
+                        metric: 'Arduino EWS'
                     },
                     {
                         id: '4',
                         category: 'geotech',
                         title: 'Pengambilan Sampel Fieldwork Lereng Saree (Aceh Besar)',
                         desc: 'Pengukuran geometri lereng dan pengambilan sampel batuan/tanah di Saree menggunakan meteran pita, kompas geologi, serta palu geologi untuk uji simulasi presipitasi.',
-                        img: 'img/Tambahan 1.jpeg'
+                        img: 'img/Tambahan 1.jpeg',
+                        metric: 'Field Survey'
                     },
                     {
                         id: '5',
                         category: 'geotech',
                         title: 'Analisis Slide2 - Kondisi Kering (FoS 1.6)',
                         desc: 'Simulasi limit equilibrium metode Bishop Simplified tanpa pengaruh muka air tanah, menghasilkan FK aman 1.6.',
-                        img: 'img/Hasil FK Kondisi Kering.png'
+                        img: 'img/Hasil FK Kondisi Kering.png',
+                        metric: 'FoS 1.6 (Aman)'
                     },
                     {
                         id: '6',
                         category: 'geotech',
                         title: 'Analisis Slide2 - Kondisi Basah (FoS 1.4)',
                         desc: 'Pengaruh infiltrasi air hujan terhadap penurunan kuat geser batuan quarry.',
-                        img: 'img/Hasil FK Kondisi Basah.png'
+                        img: 'img/Hasil FK Kondisi Basah.png',
+                        metric: 'FoS 1.4 (Stabil)'
                     },
                     {
                         id: '7',
                         category: 'geotech',
                         title: 'Analisis Slide2 - Kondisi Jenuh (FoS 1.1)',
                         desc: 'Simulasi muka air tanah penuh yang menurunkan FK hingga 1.1 mendekati ambang batas kritis Kepmen ESDM 1827.',
-                        img: 'img/Hasil FK Kondisi Jenuh.png'
+                        img: 'img/Hasil FK Kondisi Jenuh.png',
+                        metric: 'FoS 1.1 (Kritis)'
                     },
                     {
                         id: '8',
                         category: 'geotech',
                         title: 'Sidang Skripsi & Evaluasi Akademik Geoteknik',
                         desc: 'Presentasi pertanggungjawaban ilmiah hasil penelitian geoteknik bersama Dosen Pembimbing Hendra Harisman, S.T., M.Eng.Sc., Ir. Zati Hulwani, S.T., M.T. dan Dosen Penguji.',
-                        img: 'img/tambahan SIDANG.jpeg'
+                        img: 'img/tambahan SIDANG.jpeg',
+                        metric: 'IPK 3.10 (S.T.)'
                     },
                     {
                         id: '9',
                         category: 'crisis',
                         title: 'Aksi Kemanusiaan PERMATA - Aceh Tengah',
                         desc: 'Penyaluran langsung bantuan kemanusiaan dan logistik darurat bencana di Kabupaten Aceh Tengah senilai Rp 173 Juta.',
-                        img: 'img/Aksi Permata indonesia Aceh Tengah.jpeg'
+                        img: 'img/Aksi Permata indonesia Aceh Tengah.jpeg',
+                        metric: 'Rp 173 Jt Bantuan'
                     },
                     {
                         id: '10',
                         category: 'crisis',
                         title: 'Aksi Kemanusiaan PERMATA - Aceh Tamiang',
                         desc: 'Distribusi bantuan logistik darurat banjir dan korban bencana di Kabupaten Aceh Tamiang.',
-                        img: 'img/Aksi Permata indonesia Aceh Tamiang.jpeg'
+                        img: 'img/Aksi Permata indonesia Aceh Tamiang.jpeg',
+                        metric: 'Tanggap Darurat'
                     },
                     {
                         id: '11',
                         category: 'professional',
                         title: 'Forum Dialog Wilayah I PERMATA INDONESIA',
                         desc: 'Diskusi strategis isu pertambangan Sumatera yang dihadiri 80+ delegasi mahasiswa dan pimpinan institusi.',
-                        img: 'img/Forum dialog.jpeg'
+                        img: 'img/Forum dialog.jpeg',
+                        metric: '80+ Delegasi'
                     },
                     {
                         id: '12',
                         category: 'professional',
                         title: 'Pelatihan Software Micromine se-Sumatera',
                         desc: 'Workshop pemodelan tambang digital Micromine bersama instruktur profesional & pemateri PERMATA INDONESIA.',
-                        img: 'img/Pelatihan Software.jpeg'
+                        img: 'img/Pelatihan Software.jpeg',
+                        metric: '10 HMP Se-Sumatera'
                     },
                     {
                         id: '13',
                         category: 'professional',
                         title: 'Divisi Hubungan Mahasiswa HMTP USK - Staff of the Month',
                         desc: 'Apresiasi kinerja unggul sebagai Staff Divisi Hubungan Mahasiswa HMTP USK dalam layanan komunikasi MINTOCARE.',
-                        img: 'img/Humas.jpeg'
+                        img: 'img/Humas.jpeg',
+                        metric: 'Staff of Month 2x'
                     },
                     {
                         id: '14',
                         category: 'professional',
                         title: 'Keluarga Besar HMTP USK - Since 2012',
                         desc: 'Momen kebersamaan seluruh elemen mahasiswa dan alumni Teknik Pertambangan Universitas Syiah Kuala.',
-                        img: 'img/Organisasi 3.jpeg'
+                        img: 'img/Organisasi 3.jpeg',
+                        metric: 'HMTP USK'
                     }
                 ];
             }
@@ -1175,11 +1199,23 @@
             currentFilter = category;
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
-                btn.className = 'filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-zinc-400 border border-white/10 hover:border-amberforge-500/40 cursor-pointer';
+                // Reset style to unselected outline state
+                btn.className = 'filter-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-dark-850 text-zinc-400 border border-white/10 hover:border-white/30 cursor-pointer transition';
             });
             const activeBtn = document.getElementById('filter-' + category);
-            if (activeBtn) activeBtn.className = 'filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-amberforge-500 text-white cursor-pointer';
-            
+            if (activeBtn) {
+                if (category === 'all') {
+                    activeBtn.className = 'filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-amberforge-500 text-white cursor-pointer transition shadow-orange-glow';
+                } else if (category === 'geotech') {
+                    activeBtn.className = 'filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-amber-500 text-dark-950 cursor-pointer transition shadow-lg';
+                } else if (category === 'iot') {
+                    activeBtn.className = 'filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-teal-500 text-dark-950 cursor-pointer transition shadow-lg';
+                } else if (category === 'crisis') {
+                    activeBtn.className = 'filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-rose-500 text-white cursor-pointer transition shadow-lg';
+                } else if (category === 'professional') {
+                    activeBtn.className = 'filter-btn active-filter px-4 py-2 rounded-xl text-xs font-mono font-bold bg-purple-500 text-white cursor-pointer transition shadow-lg';
+                }
+            }
             renderGallery();
         };
 
@@ -1198,20 +1234,44 @@
                 professional: 'Organisasi & Profesi'
             };
 
+            // IDE 2 & 3: KODE WARNA PER KATEGORI PADA BORDER ATAS + HOVER REVEAL ANGKA KUNCI
             container.innerHTML = filtered.map(item => {
                 const safeTitle = item.title.replace(/'/g, "\\'");
                 const safeDesc = item.desc.replace(/'/g, "\\'");
                 const catLabel = categoryLabels[item.category] || item.category;
+                
+                // Tentukan warna border dan badge berdasarkan kategori (Ide 2)
+                let borderAccent = 'border-t-amberforge-500';
+                let tagColor = 'text-amberforge-400 bg-amberforge-500/10 border-amberforge-500/20';
+                if (item.category === 'iot') {
+                    borderAccent = 'border-t-teal-400';
+                    tagColor = 'text-teal-400 bg-teal-500/10 border-teal-500/20';
+                } else if (item.category === 'crisis') {
+                    borderAccent = 'border-t-rose-400';
+                    tagColor = 'text-rose-400 bg-rose-500/10 border-rose-500/20';
+                } else if (item.category === 'professional') {
+                    borderAccent = 'border-t-purple-400';
+                    tagColor = 'text-purple-400 bg-purple-500/10 border-purple-500/20';
+                }
+
+                const metricBadge = item.metric ? `
+                    <div class="absolute inset-0 bg-dark-950/85 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-400 mb-1">Key Data Metric</span>
+                        <span class="text-xl sm:text-2xl font-mono font-black text-amberforge-400 tracking-tight">${item.metric}</span>
+                        <span class="text-[10px] text-zinc-300 mt-2 font-mono underline">Klik untuk Perbesar Gambar</span>
+                    </div>
+                ` : '';
+
                 return `
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col group">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 ${borderAccent} border-t-4 flex flex-col group relative">
                     <div class="h-48 photo-contain-box relative overflow-hidden flex items-center justify-center cursor-pointer" onclick="openLightbox('${item.img}', '${safeTitle}', '${safeDesc}')">
                         <img src="${item.img}" alt="${item.title}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="handleImageError(this, '${safeTitle}', '${item.category}')">
-                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-amberforge-300 font-mono font-bold">Perbesar 🔍</div>
+                        ${metricBadge}
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
                         <div>
-                            <span class="text-[10px] font-mono text-amberforge-400 uppercase tracking-wider font-bold">${catLabel}</span>
-                            <h3 class="font-bold text-white text-sm mt-1 group-hover:text-amberforge-400 transition">${item.title}</h3>
+                            <span class="text-[10px] font-mono uppercase tracking-wider font-bold px-2.5 py-1 rounded-md border ${tagColor} inline-block mb-1.5">${catLabel}</span>
+                            <h3 class="font-bold text-white text-sm group-hover:text-amberforge-400 transition">${item.title}</h3>
                             <p class="text-xs text-zinc-400 mt-2 leading-relaxed">${item.desc}</p>
                         </div>
                     </div>
